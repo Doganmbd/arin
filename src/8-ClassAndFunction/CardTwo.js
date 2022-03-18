@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const Cards = (Card) => {
   return (
@@ -18,5 +19,14 @@ const Cards = (Card) => {
     
   );
 };
+
+Cards.defaultProps = {
+    body : "buradaki yazıyı sildim ve default değer ekledim"
+}
+
+Cards.propTypes = {
+    title : PropTypes.string
+   /*  title : PropTypes.string.isRequired */
+}
 
 export default Cards;

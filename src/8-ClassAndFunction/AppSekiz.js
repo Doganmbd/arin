@@ -1,5 +1,4 @@
 /* https://reactjs.org/docs/components-and-props.html */
-
 //! Function and Class Components 
 
 /*
@@ -15,8 +14,29 @@ function Welcome(props) {
 
 }  */
 
-//! default props
+/* https://reactjs.org/docs/typechecking-with-proptypes.html */
+//! default proptype
+/* eğer bir değer yoksa ama ben birşeyler görünmesini istiyorsam en alta bunu yazacaksın.
+Welcome.defaultProps = {
+  name: 'Stranger'
+};
+ */
 
+//! proptypes
+/* burada amaç hangi değerde verilerin bize ulaşmasını istiyorsak o değeri yazarız ör:string
+import PropTypes from 'prop-types'; ekliyoruz
+
+Welcome.propTypes = {
+
+  optionalArray: PropTypes.array,
+  optionalBool: PropTypes.bool,
+  optionalFunc: PropTypes.func,
+  optionalNumber: PropTypes.number,
+  optionalObject: PropTypes.object,
+  optionalString: PropTypes.string,
+  optionalSymbol: PropTypes.symbol,
+}
+*/
 
 import React from "react" 
 import Cards from "../8-ClassAndFunction/CardTwo"
@@ -40,7 +60,7 @@ class AppEight extends React.Component {
                 </div>
                 <div className="col">
                 <Collapses name="collapseWidthExamplee2">
-                    <Cards title ="HTML" body="Basit ders" image="https://picsum.photos/id/100/200/300"/>
+                    <Cards title ="HTML"  image="https://picsum.photos/id/100/200/300"/>
                 </Collapses>
                 </div>
                 <div className="col">
