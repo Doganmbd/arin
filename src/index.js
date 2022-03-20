@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 /* import './index.css'; */
 
 import App from './App';
-import AppEight from "./8-ClassAndFunction/AppSekiz"
+/* import AppEight from "./8-ClassAndFunction/AppSekiz" */
+import AppNine from './9-class ile state yapısı/AppDokuz';
 /* import Cardtwo from "./component/Cardtwo" */
 /* import reportWebVitals from './reportWebVitals'; */
 
@@ -48,7 +49,8 @@ import AppEight from "./8-ClassAndFunction/AppSekiz"
 ReactDOM.render(    // oluşturduğum component ı sayfamızda görünmesini sağlar.reactDom.render
   <React.StrictMode>
     <App />     {/* app componentimi çağırıyorum . yani sayfamda neyi gösterecem */}
-    <AppEight/>    {/* sekizinci konu */}
+    {/* <AppEight/>  */}   {/* 8. konu class ve fonk. propType, ... */}
+    <AppNine/>  {/* 9.konu class ile state oluşturmak */}
   </React.StrictMode>,
   document.getElementById('root')   /* oluşturduğum componenti nerede gösterecem.root index.html deki id olduğu için. */
 );
